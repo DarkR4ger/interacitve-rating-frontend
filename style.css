@@ -4,7 +4,6 @@
 
 *{
   margin: 0;
-  font: inherit;
 }
 
 img,svg{
@@ -43,26 +42,35 @@ body{
   background: var(--clr-veryDarkBlue);
   color: White;
   min-height: 100vh;
-  display: grid;
+  display:flex;
+  flex-direction: column;
+  place-content:center;
   place-items: center;
+  gap:2em;
 }
 
-@media (min-width: 600px){
+@media (max-width: 600px){
   body{
     min-height: 100vh;
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    place-content: center;
     place-items: center;
+    gap:2em;
   }
 }
 
 .rating-container{
   background: var(--gradient-primary);
   padding: 2em;
-  width: 23em;
+  max-width: 23em;
   display: grid;
   justify-content: start;
   border-radius: 2em;
+  margin-right: 3em;
+  margin-left: .9em;
 }
+
 
 
 .star-icon svg{
@@ -81,14 +89,15 @@ body{
 .feedback{
   color: var(--clr-mediumGrey);
   margin-top: 1em;
-  padding-right: 1em;
 }
 
 .rating{
   display: flex;
   place-content: center;
-  gap: 2em;
+  gap: 2.3em;
   margin: 2em 0 2em 0;
+  flex-wrap: wrap;
+  justify-content: flex-start;
 }
 
 .rating button{
@@ -112,6 +121,12 @@ body{
   background: var(--clr-orange);
 }
 
+
+@media (max-width: 600px){
+  .rating{
+    gap:.8em;
+  }
+}
 
 .submit,.return{
   width:100%;
