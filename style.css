@@ -58,18 +58,12 @@ body{
 .rating-container{
   background: var(--gradient-primary);
   padding: 2em;
-  margin: 2em;
-  max-width: 23em;
+  width: 23em;
   display: grid;
   justify-content: start;
   border-radius: 2em;
 }
 
-@media (max-width: 600px){
-  .rating-container{
-    margin: 2em;
-  }
-}
 
 .star-icon svg{
   padding: 1em;
