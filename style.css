@@ -94,7 +94,7 @@ body{
 .rating{
   display: flex;
   place-content: center;
-  gap: 2.3em;
+  gap: 1.7em;
   margin: 2em 0 2em 0;
   flex-wrap: wrap;
   justify-content: flex-start;
@@ -104,7 +104,7 @@ body{
   background: var(--clr-darkBlue);
   color: var(--clr-mediumGrey);
   border: none;
-  width: 3em;
+  width: 3.5em;
   aspect-ratio: 1/1;
   border-radius: 50%;
   cursor: pointer;
