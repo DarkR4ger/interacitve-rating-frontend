@@ -7,16 +7,15 @@ const ratings = document.querySelectorAll(".btn");
 
 const score = document.getElementById("score");
 
-submitButton.addEventListener("click", () => {
-  mainContainer.style.display = "none";
-  thankYou.style.display = "block";
-
-  ratings.forEach((rating) => {
-    rating.addEventListener("click", () => {
-      score.innerHTML = rating.innerHTML;
-    });
-  });
-});
+ratings.forEach((rating) => {
+  rating.addEventListener("click", () => {
+    score.innerHTML = rating.innerHTML;
+  })
+  submitButton.addEventListener("click", () => {
+    mainContainer.style.display = "none";
+    thankYou.style.display = "block";
+  })
+})
 
 
 rateAgain.addEventListener("click", () => {
